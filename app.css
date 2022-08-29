@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 85%;
+    margin: auto;
+}
+.search{
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px 1px rgb(238, 237, 237);
+    padding: 6px 15px;
+    border-radius: 4px;
+    
+}
+.search input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: gray;
+    padding: 3px 0px;
+    width: 90%;
+}
+.search i{
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+main{
+    width: 100%;
+    margin-top: 2rem;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+}
+section .box{
+    border: 1px solid gray;
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 10px 1px gray);
+    overflow: hidden;
+}
+section .box .img img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+section .box .text{
+    padding: 10px;
+}
+section .box .text .team{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+section .box .text .team img{
+    width: 22px;
+    border-radius: 50%;
+}
+section .box .text .team h5{
+    color: black;
+    font-size: 16px;
+    margin-left: 5px;
+}
+section .box .text h6{
+    color: gray;
+    font-size: 15px;
+    margin-top: 6px;
+    font-weight: 400;
+}
